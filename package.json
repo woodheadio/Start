@@ -1,0 +1,34 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "A baseline project to fork new projects from.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woodheadio/start.git"
+  },
+  "keywords": [
+    "Start",
+    "Baseline",
+    "Init",
+    "New",
+    "Project"
+  ],
+  "author": "Alex Woodhead",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woodheadio/start/issues"
+  },
+  "homepage": "https://github.com/woodheadio/start#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.6.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-watch": "^3.1.2",
+    "webpack": "^3.5.5",
+    "webpack-merge": "^4.1.0"
+  }
+}
