@@ -1,4 +1,5 @@
 import path from 'path';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 export default {
   entry: [
@@ -18,5 +19,8 @@ export default {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist'])
+  ]
 }

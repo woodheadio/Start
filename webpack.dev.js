@@ -1,7 +1,6 @@
 import merge from 'webpack-merge';
 import path from 'path';
 import common from './webpack.common.js';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default merge(common, {
@@ -10,7 +9,6 @@ export default merge(common, {
     contentBase: './dist'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Development'
     })

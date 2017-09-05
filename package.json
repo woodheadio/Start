@@ -5,10 +5,10 @@
   "description": "A baseline project to fork new projects from.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "babel-node ./node_modules/.bin/webpack --config webpack.prod.js",
     "lint": "esw webpack.config.*  src  utils --color",
     "lint:watch": "npm run lint -- --watch",
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "babel-node ./node_modules/.bin/webpack-dev-server --open --config webpack.dev.js",
     "test": "mocha --reporter progress utils/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm test -- --watch"
   },
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/woodheadio/start#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
