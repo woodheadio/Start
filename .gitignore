@@ -123,4 +123,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### Custom Ignores ###
+
+#Do not commit in the result of the build output.
+/dist/**/*
+
 # End of https://www.gitignore.io/api/node,visualstudiocode

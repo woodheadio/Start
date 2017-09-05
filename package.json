@@ -1,9 +1,11 @@
 {
   "name": "start",
+  "private": true,
   "version": "1.0.0",
   "description": "A baseline project to fork new projects from.",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.prod.js",
     "lint": "esw webpack.config.*  src  utils --color",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress utils/testSetup.js \"src/**/*.test.js\"",
@@ -31,10 +33,13 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "chai": "^4.1.2",
+    "clean-webpack-plugin": "^0.1.16",
     "eslint": "^4.6.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-watch": "^3.1.2",
+    "html-webpack-plugin": "^2.30.1",
     "mocha": "^3.5.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.5",
     "webpack-merge": "^4.1.0"
   }
