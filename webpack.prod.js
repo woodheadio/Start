@@ -10,7 +10,9 @@ export default merge(common, {
   devtool: 'source-map',
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new UglifyJsWebpackPlugin(),
+    new UglifyJsWebpackPlugin({
+      sourceMap: true
+    }),
     new HtmlWebpackPlugin({
       title: 'Caching'
     }),

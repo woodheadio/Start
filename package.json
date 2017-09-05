@@ -8,6 +8,7 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "esw webpack.config.*  src  utils --color",
     "lint:watch": "npm run lint -- --watch",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "test": "mocha --reporter progress utils/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm test -- --watch"
   },
@@ -41,6 +42,7 @@
     "mocha": "^3.5.0",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
     "webpack-merge": "^4.1.0"
   }
 }
